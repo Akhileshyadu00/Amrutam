@@ -1,12 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
-
-// Sample product data
 const products = [
   {
     id: 1,
-    image: "https://t4.ftcdn.net/jpg/16/37/33/71/240_F_1637337105_hzwFQaCjEYRRZu3124rv7CZy6uXitRml.jpg",
+    image: "https://via.placeholder.com/400x250",
     description: "Herbal Face Pack for Glowing Skin",
     price: 999,
     rating: 4,
@@ -28,7 +23,7 @@ const products = [
   },
   {
     id: 2,
-    image: "https://t3.ftcdn.net/jpg/15/75/73/34/240_F_1575733431_svOQjfXRCNLicRXv8BcCMGCdYcDjM1uv.jpg",
+    image: "https://via.placeholder.com/400x250",
     description: "Ayurvedic Hair Oil for Hair Fall",
     price: 599,
     rating: 3,
@@ -107,26 +102,3 @@ const products = [
     ingredients: ["Neem", "Aloe Vera", "Tulsi", "Coconut Oil"],
   },
 ];
-
-
-
-
-function Home() {
-  return (
-    <div className="bg-amber-50 max-w-screen py-5 text-green-800">
-      <div className="max-w-7xl mx-auto p-6">
-        {/* Section Title */}
-        <h2 className="text-2xl font-bold mb-6">Summer Collection</h2>
-
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default Home;

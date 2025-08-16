@@ -4,7 +4,7 @@ import { FiShoppingBag } from "react-icons/fi";
 
 function Search() {
   return (
-    <div className="bg-cyan-200 py-6 px-4 shadow-md rounded-md  mx-auto">
+    <div className="bg-cyan-100 py-6 px-4 shadow-md rounded-md  mx-auto">
       <div className="flex flex-col items-center space-y-4">
         {/* Title */}
         <h2 className="text-2xl font-semibold text-gray-800">STORE</h2>
