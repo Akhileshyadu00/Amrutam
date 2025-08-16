@@ -2,26 +2,24 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Search from './components/Search';
+import Home from './pages/Home';
+import Footer from './pages/Footer';
 
-// Example pages
-// import Home from './pages/Home';
-// import About from './pages/About';
-// import Products from './pages/Products';
-// import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
       <Header />
       <Search />
-      <main className="p-6">
+      <main className="p-0">
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="bg-amber-50 shadow-md text-blue-300">
+    <header className="bg-amber-50 shadow-md text-green-800">
       {/* Top Bar */}
       <div className="flex justify-between items-center px-6 py-4">
         {/* Phone Section */}
